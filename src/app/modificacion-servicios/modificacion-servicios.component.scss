@@ -1,0 +1,19 @@
+.modificacion-servicios{
+    background: url(assets/images/formato-ms.png);
+    position: relative;
+    [class*="fila-"]{
+        left: 30px;
+        width: 1210px;
+    }
+    .fila-1{
+        position: absolute;
+        top: 73px;
+        height: 78px;
+        .campo{
+            position: absolute;
+            bottom: 6px;
+            left: 212px;
+            width: 434px;
+        }    
+    }
+}

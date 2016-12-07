@@ -1,0 +1,12 @@
+.formulario-diligenciable{
+    width: 1270px;
+    height: 1949px;
+    input{
+        border: 4px solid #3ad216;
+    }
+    &.listo{
+        input, textarea{
+            border: 0;
+        }
+    }
+}
