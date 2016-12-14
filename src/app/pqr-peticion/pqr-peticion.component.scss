@@ -1,0 +1,264 @@
+.pqr-peticionp1{
+    background: url(assets/images/formato-ptp1.png);
+    position: relative;
+    [class*="fila-"]{
+        left: 27px;
+    }
+    .fila-1{
+        position: absolute;
+        top: 219px;
+        height: 24px;
+        width: 1210px;
+        #campociudad{
+            position: absolute;
+            height: 21px;
+            max-width: 218px;
+        }
+        #campodia{
+            position: absolute;
+            max-width:35px;
+            left: 515px;
+            height: 21px;
+        }
+        #campomes{
+            position: absolute;
+            max-width:35px;
+            left: 558px;
+            height: 21px;
+        }
+        #campoanio{
+            position: absolute;
+            max-width:50px;
+            left: 601px;
+            height: 21px;
+        }     
+    }
+    .fila-2{
+        position: absolute;
+        top: 357px;
+        height: 24px;
+        width: 1210px;
+        #campotipopeticion{
+            position: absolute;
+            height: 1.5em;
+            left: 93px;
+            width: 30px;
+        }         
+    }
+    .fila-3{
+        position: absolute;
+        top: 387px;
+        height: 24px;
+        width: 1210px;
+        #camponumtel{
+            position: absolute;
+            left: 363px;
+            height: 21px;
+            max-width: 260px;
+        }    
+    }
+    .fila-4{
+        position: absolute;
+        top: 414px;
+        height: 24px;
+        width: 1210px;
+        #camponombrepr{
+            position: absolute;
+            left: 486px;
+            height: 21px;
+            max-width: 686px;
+        }    
+    }
+    .fila-5{
+        position: absolute;
+        top: 440px;
+        height: 24px;
+        width: 1210px;
+        #campoapellidopr{
+            position: absolute;
+            left: 368px;
+            height: 21px;
+            max-width: 808px;
+        }    
+    }
+    .fila-6{
+        position: absolute;
+        top: 488px;
+        height: 24px;
+        width: 1210px;
+        #campotipocc{
+            position: absolute;
+            height: 1.5em;
+            left: 9px;
+            width: 30px;
+        }   
+        #campotipoce{
+            position: absolute;
+            height: 1.5em;
+            left: 377px;
+            width: 30px;
+        }
+        #campotiponit{
+            position: absolute;
+            height: 1.5em;
+            left: 745px;
+            width: 30px;
+        }
+        #campotipopas{ 
+            position: absolute;
+            height: 1.5em;
+            left: 958px;
+            width: 30px;
+        }    
+    }
+    .fila-7{
+        position: absolute;
+        top: 516px;
+        height: 24px;
+        width: 1210px;
+        #camponumdoc{
+            position: absolute;
+            left: 362px;
+            height: 21px;
+            max-width: 236px;
+        }    
+    }
+    .fila-8{
+        position: absolute;
+        top: 631px;
+        height: 24px;
+        width: 1210px;
+        #campotipocorreo{
+            position: absolute;
+            height: 1.5em;
+            left: 425px;
+            width: 30px;
+        }   
+        #campotipodireccionf{
+            position: absolute;
+            height: 1.5em;
+            left: 1028px;
+            width: 30px;
+        }   
+    }
+    .fila-9{
+        position: absolute;
+        top: 699px;
+        height: 48px;
+        width: 1239px;
+        #campodircorreo{
+            position: absolute;
+            top: 20px;
+            left: 26px;
+            height: 21px;
+            max-width: 548px;
+        }   
+        #campodirfisica{
+            position: absolute;
+            left: 616px;
+            height: 21px;
+            max-width: 580px;
+        }   
+    }
+    .fila-10{
+        position: absolute;
+        top: 744px;
+        height: 24px;
+        width: 1239px; 
+        #campoteloficina{
+            position: absolute;
+            left: 294px;
+            height: 20px;
+            max-width: 214px;
+        } 
+        #campotelcasa{ 
+            position: absolute;
+            left: 562px;
+            height: 20px;
+            max-width: 235px;
+        } 
+        #campotelcel{
+            position: absolute;
+            left: 873px;
+            height: 20px;
+            max-width: 302px;
+        }   
+    }
+    .fila-11{
+        position: absolute;
+        top: 789px;
+        height: 24px;
+        width: 1239px;
+        #objetopeticion{
+            position: absolute;
+            height: 21px;
+            max-width: 1178px;
+        }     
+    }
+    .fila-12{
+        position: absolute;
+        top: 843px;
+        height: 135px;
+        width: 1239px; 
+        #hechospeticion{
+            position: absolute;
+            height: 132px;
+            width: 1202px;
+            line-height: 35px;
+            resize: none;
+            overflow: hidden;
+            /*background: transparent;*/
+        }   
+    }
+    .fila-13{
+        position: absolute;
+        top: 1019px;
+        height: 24px;
+        width: 1239px;
+        #pruebaspeticion{
+            position: absolute;
+            height: 21px;
+            max-width: 1178px;
+        }   
+    }
+    .fila-14{
+        position: absolute;
+        top: 1814px;
+        height: 24px;
+        width: 1238px;
+        #campoautorizosi{
+            position: absolute;
+            height: 1.5em;
+            left: 285px;
+            width: 30px;
+        }   
+        #campoautorizono{
+            position: absolute;
+            height: 1.5em;
+            left: 381px;
+            width: 30px;
+        }  
+    }
+    .fila-15{
+        position: absolute;
+        top: 1865px;
+        height: 24px;
+        width: 1238px;
+        #nombreautor{
+            position: absolute;
+            height: 21px;
+            left: 93px;
+            max-width: 460px;
+        }   
+        #campoccautor{
+            position: absolute;
+            height: 21px;
+            left: 598px;
+            max-width: 405px;
+        }  
+    }
+}
+.pqr-peticionp2{
+    background: url(assets/images/formato-ptp2.png);
+    position: relative;
+}

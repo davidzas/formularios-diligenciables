@@ -9,10 +9,16 @@ import { ModificacionServiciosComponent } from './modificacion-servicios/modific
 import { MainComponent } from './main/main.component';
 import {TooltipModule} from "ng2-tooltip";
 import { AutosizeDirective } from './autosize.directive';
+import { PqrRecursoComponent } from './pqr-recurso/pqr-recurso.component';
+import { PqrQuejaComponent } from './pqr-queja/pqr-queja.component';
+import { PqrPeticionComponent } from './pqr-peticion/pqr-peticion.component';
 
 
 const appRoutes: Routes = [
   { path: 'modificacion-servicios', component: ModificacionServiciosComponent },
+  { path: 'pqr-recurso', component: PqrRecursoComponent },
+  { path: 'pqr-queja', component: PqrQuejaComponent },
+  { path: 'pqr-peticion', component: PqrPeticionComponent },
   { path: '**', component: MainComponent }
 ];
 
@@ -22,7 +28,10 @@ const appRoutes: Routes = [
     AppComponent,
     ModificacionServiciosComponent,
     MainComponent,
-    AutosizeDirective
+    AutosizeDirective,
+    PqrRecursoComponent,
+    PqrQuejaComponent,
+    PqrPeticionComponent
   ],
   imports: [
     BrowserModule,
