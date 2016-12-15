@@ -19,22 +19,60 @@ export class ModificacionServiciosComponent implements OnInit {
 
   enlistpdf: any;
   puedeDescargar: any;
-  constructor() { 
+  constructor() {
     this.enlistpdf = false;
     this.puedeDescargar = true;
   }
 
   ngOnInit() {
 
-    
+
   }
 
+
+
   descargarPdf() {
-     this.puedeDescargar = false;
-     kendo.drawing.drawDOM(jQuery(".formulario-diligenciable.modificacion-servicios"), { forcePageBreak: ".page-break" }).then((group) => {
-       kendo.drawing.pdf.saveAs(group, "formato.pdf");
-       this.puedeDescargar = true;
-     });
+    this.enlistpdf = true;
+    this.puedeDescargar = false;
+    let cajitas = [];
+    let radios = [];
+    jQuery('input[type=checkbox]').each(function () {
+      if (jQuery(this).prop("checked")) {
+        let id = jQuery(this).prop('id');
+        jQuery(this).replaceWith('<span id="' + id + '" class="cajita-print">X</span>');
+      } else {
+        jQuery(this).hide();
+      }
+      cajitas.push(this);
+    });
+    jQuery('input[type=radio]').each(function () {
+      if (jQuery(this).prop("checked")) {
+        let id = jQuery(this).prop('id');
+        jQuery(this).replaceWith('<span id="' + id + '" class="cajita-print">X</span>');
+      } else {
+        jQuery(this).hide();
+      }
+      radios.push(this);
+    });
+    setTimeout(_ => {
+      kendo.drawing.drawDOM(jQuery(".formulario-diligenciable.modificacion-servicios"), {
+        forcePageBreak: ".page-break", paperSize: "Legal",
+        scale: 0.48
+      }).then((group) => {
+        kendo.drawing.pdf.saveAs(group, "formato.pdf");
+
+        this.puedeDescargar = true;
+        this.enlistpdf = false;
+        cajitas.forEach(el => {
+          let id = jQuery(el).prop('id');
+          jQuery('#' + id).replaceWith(el);
+        });
+        radios.forEach(el => {
+          let id = jQuery(el).prop('id');
+          jQuery('#' + id).replaceWith(el);
+        });
+      });
+    }, 1000);
     //*********************************************************//
     /*this.puedeDescargar = false;
     this.enlistpdf = true;
