@@ -1,264 +1,286 @@
-.pqr-quejap1{
-    background: url(assets/images/formato-pqp1.png);
-    position: relative;
-    [class*="fila-"]{
-        left: 27px;
-    }
-    .fila-1{
-        position: absolute;
-        top: 229px;
-        height: 24px;
-        width: 1210px;
-        #campociudad{
-            position: absolute;
-            height: 21px;
-            max-width: 221px;
+.formulario{
+    .pqr-quejap1{
+        background: url(assets/images/formato-pqp1.png);
+        position: relative;
+        [class*="fila-"]{
+            left: 27px;
         }
-        #campodia{
+        .fila-1{
             position: absolute;
-            max-width:35px;
-            left: 502px;
-            height: 21px;
+            top: 229px;
+            height: 24px;
+            width: 1210px;
+            #campociudad{
+                position: absolute;
+                height: 21px;
+                max-width: 221px;
+            }
+            #campodia{
+                position: absolute;
+                max-width:35px;
+                left: 502px;
+                height: 21px;
+            }
+            #campomes{
+                position: absolute;
+                max-width:35px;
+                left: 546px;
+                height: 21px;
+            }
+            #campoanio{
+                position: absolute;
+                max-width:50px;
+                left: 589px;
+                height: 21px;
+            }     
         }
-        #campomes{
+        .fila-2{
             position: absolute;
-            max-width:35px;
-            left: 546px;
-            height: 21px;
+            top: 367px;
+            height: 24px;
+            width: 1210px;
+            #campotipoqueja{
+                position: absolute;
+                height: 1.5em;
+                left: 95px;
+                width: 30px;
+            }         
         }
-        #campoanio{
+        .fila-3{
             position: absolute;
-            max-width:50px;
-            left: 589px;
-            height: 21px;
-        }     
-    }
-    .fila-2{
-        position: absolute;
-        top: 367px;
-        height: 24px;
-        width: 1210px;
-        #campotipoqueja{
-            position: absolute;
-            height: 1.5em;
-            left: 95px;
-            width: 30px;
-        }         
-    }
-    .fila-3{
-        position: absolute;
-        top: 398px;
-        height: 24px;
-        width: 1210px;
-        #camponumtel{
-            position: absolute;
-            left: 343px;
-            height: 21px;
-            max-width: 260px;
-        }    
-    }
-    .fila-4{
-        position: absolute;
-        top: 424px;
-        height: 24px;
-        width: 1210px;
-        #camponombrepr{
-            position: absolute;
-            left: 488px;
-            height: 21px;
-            max-width: 686px;
-        }    
-    }
-    .fila-5{
-        position: absolute;
-        top: 450px;
-        height: 24px;
-        width: 1210px;
-        #campoapellidopr{
-            position: absolute;
-            left: 370px;
-            height: 21px;
-            max-width: 808px;
-        }    
-    }
-    .fila-6{
-        position: absolute;
-        top: 498px;
-        height: 24px;
-        width: 1210px;
-        #campotipocc{
-            position: absolute;
-            height: 1.5em;
-            left: 11px;
-            width: 30px;
-        }   
-        #campotipoce{
-            position: absolute;
-            height: 1.5em;
-            left: 379px;
-            width: 30px;
+            top: 398px;
+            height: 24px;
+            width: 1210px;
+            #camponumtel{
+                position: absolute;
+                left: 343px;
+                height: 21px;
+                max-width: 260px;
+            }    
         }
-        #campotiponit{
+        .fila-4{
             position: absolute;
-            height: 1.5em;
-            left: 747px;
-            width: 30px;
+            top: 424px;
+            height: 24px;
+            width: 1210px;
+            #camponombrepr{
+                position: absolute;
+                left: 488px;
+                height: 21px;
+                max-width: 686px;
+            }    
         }
-        #campotipopas{ 
+        .fila-5{
             position: absolute;
-            height: 1.5em;
-            left: 960px;
-            width: 30px;
-        }    
+            top: 450px;
+            height: 24px;
+            width: 1210px;
+            #campoapellidopr{
+                position: absolute;
+                left: 370px;
+                height: 21px;
+                max-width: 808px;
+            }    
+        }
+        .fila-6{
+            position: absolute;
+            top: 498px;
+            height: 24px;
+            width: 1210px;
+            #campotipocc{
+                position: absolute;
+                height: 1.5em;
+                left: 11px;
+                width: 30px;
+            }   
+            #campotipoce{
+                position: absolute;
+                height: 1.5em;
+                left: 379px;
+                width: 30px;
+            }
+            #campotiponit{
+                position: absolute;
+                height: 1.5em;
+                left: 747px;
+                width: 30px;
+            }
+            #campotipopas{ 
+                position: absolute;
+                height: 1.5em;
+                left: 960px;
+                width: 30px;
+            }    
+        }
+        .fila-7{
+            position: absolute;
+            top: 526px;
+            height: 24px;
+            width: 1210px;
+            #camponumdoc{
+                position: absolute;
+                left: 364px;
+                height: 21px;
+                max-width: 236px;
+            }    
+        }
+        .fila-8{
+            position: absolute;
+            top: 642px;
+            height: 24px;
+            width: 1210px;
+            #campotipocorreo{
+                position: absolute;
+                height: 1.5em;
+                left: 428px;
+                width: 30px;
+            }   
+            #campotipodireccionf{
+                position: absolute;
+                height: 1.5em;
+                left: 1030px;
+                width: 30px;
+            }   
+        }
+        .fila-9{
+            position: absolute;
+            top: 709px;
+            height: 48px;
+            width: 1239px;
+            #campodircorreo{
+                position: absolute;
+                top: 20px;
+                left: 28px;
+                height: 21px;
+                max-width: 548px;
+            }   
+            #campodirfisica{
+                position: absolute;
+                left: 618px;
+                height: 21px;
+                max-width: 580px;
+            }   
+        }
+        .fila-10{
+            position: absolute;
+            top: 754px;
+            height: 24px;
+            width: 1239px; 
+            #campoteloficina{
+                position: absolute;
+                left: 296px;
+                height: 20px;
+                max-width: 214px;
+            } 
+            #campotelcasa{ 
+                position: absolute;
+                left: 564px;
+                height: 20px;
+                max-width: 235px;
+            } 
+            #campotelcel{
+                position: absolute;
+                left: 875px;
+                height: 20px;
+                max-width: 302px;
+            }   
+        }
+        .fila-11{
+            position: absolute;
+            top: 799px;
+            height: 24px;
+            width: 1239px;
+            #objetoqueja{
+                position: absolute;
+                height: 21px;
+                max-width: 1193px;
+            }     
+        }
+        .fila-12{
+            position: absolute;
+            top: 853px;
+            height: 135px;
+            width: 1239px; 
+            #hechosqueja{
+                position: absolute;
+                height: 132px;
+                width: 1204px;
+                line-height: 35px;
+                resize: none;
+                overflow: hidden;
+                /*background: transparent;*/
+            }   
+        }
+        .fila-13{
+            position: absolute;
+            top: 1029px;
+            height: 24px;
+            width: 1239px;
+            #pruebasqueja{
+                position: absolute;
+                height: 21px;
+                max-width: 1203px;
+            }   
+        }
+        .fila-14{
+            position: absolute;
+            top: 1824px;
+            height: 24px;
+            width: 1238px;
+            #campoautorizosi{
+                position: absolute;
+                height: 1.5em;
+                left: 287px;
+                width: 30px;
+            }   
+            #campoautorizono{
+                position: absolute;
+                height: 1.5em;
+                left: 383px;
+                width: 30px;
+            }  
+        }
+        .fila-15{
+            position: absolute;
+            top: 1875px;
+            height: 24px;
+            width: 1238px;
+            #nombreautor{
+                position: absolute;
+                height: 21px;
+                left: 95px;
+                max-width: 460px;
+            }   
+            #campoccautor{
+                position: absolute;
+                height: 21px;
+                left: 600px;
+                max-width: 405px;
+            }  
+        }
     }
-    .fila-7{
-        position: absolute;
-        top: 526px;
-        height: 24px;
-        width: 1210px;
-        #camponumdoc{
-            position: absolute;
-            left: 364px;
-            height: 21px;
-            max-width: 236px;
-        }    
-    }
-    .fila-8{
-        position: absolute;
-        top: 642px;
-        height: 24px;
-        width: 1210px;
-        #campotipocorreo{
-            position: absolute;
-            height: 1.5em;
-            left: 428px;
-            width: 30px;
-        }   
-        #campotipodireccionf{
-            position: absolute;
-            height: 1.5em;
-            left: 1030px;
-            width: 30px;
-        }   
-    }
-    .fila-9{
-        position: absolute;
-        top: 709px;
-        height: 48px;
-        width: 1239px;
-        #campodircorreo{
-            position: absolute;
-            top: 20px;
-            left: 28px;
-            height: 21px;
-            max-width: 548px;
-        }   
-        #campodirfisica{
-            position: absolute;
-            left: 618px;
-            height: 21px;
-            max-width: 580px;
-        }   
-    }
-    .fila-10{
-        position: absolute;
-        top: 754px;
-        height: 24px;
-        width: 1239px; 
-        #campoteloficina{
-            position: absolute;
-            left: 296px;
-            height: 20px;
-            max-width: 214px;
-        } 
-        #campotelcasa{ 
-            position: absolute;
-            left: 564px;
-            height: 20px;
-            max-width: 235px;
-        } 
-        #campotelcel{
-            position: absolute;
-            left: 875px;
-            height: 20px;
-            max-width: 302px;
-        }   
-    }
-    .fila-11{
-        position: absolute;
-        top: 799px;
-        height: 24px;
-        width: 1239px;
-        #objetoqueja{
-            position: absolute;
-            height: 21px;
-            max-width: 1193px;
-        }     
-    }
-    .fila-12{
-        position: absolute;
-        top: 853px;
-        height: 135px;
-        width: 1239px; 
-        #hechosqueja{
-            position: absolute;
-            height: 132px;
-            width: 1204px;
-            line-height: 35px;
-            resize: none;
-            overflow: hidden;
-            /*background: transparent;*/
-        }   
-    }
-    .fila-13{
-        position: absolute;
-        top: 1029px;
-        height: 24px;
-        width: 1239px;
-        #pruebasqueja{
-            position: absolute;
-            height: 21px;
-            max-width: 1203px;
-        }   
-    }
-    .fila-14{
-        position: absolute;
-        top: 1824px;
-        height: 24px;
-        width: 1238px;
-        #campoautorizosi{
-            position: absolute;
-            height: 1.5em;
-            left: 287px;
-            width: 30px;
-        }   
-        #campoautorizono{
-            position: absolute;
-            height: 1.5em;
-            left: 383px;
-            width: 30px;
-        }  
-    }
-    .fila-15{
-        position: absolute;
-        top: 1875px;
-        height: 24px;
-        width: 1238px;
-        #nombreautor{
-            position: absolute;
-            height: 21px;
-            left: 95px;
-            max-width: 460px;
-        }   
-        #campoccautor{
-            position: absolute;
-            height: 21px;
-            left: 600px;
-            max-width: 405px;
-        }  
+    .pqr-quejap2{
+        background: url(assets/images/formato-pqp2.png);
+        position: relative;
     }
 }
-.pqr-quejap2{
-    background: url(assets/images/formato-pqp2.png);
-    position: relative;
+.descargar{
+    text-align: center;
+    margin-top: 40px;
+    button{
+        padding: 10px 40px;
+    }
+    img{  
+        width: 24px;
+    }
+}
+.contendor-app{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+    max-width: 1270px;
+    width: 100%;
+    height: calc(100% - 183px);
+    box-shadow: 0 0 10px #000;
 }

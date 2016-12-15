@@ -1,77 +1,81 @@
-<div class="formulario-diligenciable pqr-recursop1">
-  <div class="fila-1">
-		<input type="text" id="campociudad" autosize class="form-campo" />
-	  	<tooltip-content #numerofecha [animation]="true" placement="'top'">  
-	      <b>Señor Usuario este campo es numérico por favor verificar</b>
-	    </tooltip-content> 
-	    <input type="number" min="1" [tooltip]="numerofecha" min="1" max="31" id="campodia" autosize />
-	    <input type="number" min="1" [tooltip]="numerofecha" min="1" max="12" id="campomes" autosize />
-	    <input type="number" min="1" [tooltip]="numerofecha" min="2016" max="2999" id="campoanio" autosize />
-  </div>
-  <div class="fila-2">
-  		<input type="radio" id="camporecsi" name="recursoreposicion" value="si">
-    	<input type="radio" id="camporecno" name="recursoreposicion" value="no">
-  </div>
-  <div class="fila-3">
-  		<tooltip-content #numerotel [animation]="true" placement="'top'">  
-	      <b>Señor Usuario este campo es numérico por favor verificar</b>
-	    </tooltip-content> 
-	    <input type="number" min="1" [tooltip]="numerotel" id="camponumtel" autosize />
-  </div>
-  <div class="fila-4">
-	    <input type="text" id="camponombrepr" autosize class="form-campo" />
-  </div>
-  <div class="fila-5">
-	    <input type="text" id="campoapellidopr" autosize class="form-campo" />
-  </div>
-  <div class="fila-6">
-  		<input type="radio" id="campotipocc" name="tipodocumento" value="cc">
-    	<input type="radio" id="campotipoce" name="tipodocumento" value="ce">
-    	<input type="radio" id="campotiponit" name="tipodocumento" value="nt">
-    	<input type="radio" id="campotipopas" name="tipodocumento" value="pa">
-  </div>
-  <div class="fila-7">
-	    <tooltip-content #numerodoc [animation]="true" placement="'top'">  
-	      <b>Señor Usuario este campo es numérico por favor verificar</b>
-	    </tooltip-content> 
-	    <input type="number" min="1" [tooltip]="numerodoc" id="camponumdoc" autosize />
-  </div>
-  <div class="fila-8">
-  		<input type="radio" id="campotipocorreo" name="medioderecibo" value="correo_electronico">
-    	<input type="radio" id="campotipodireccionf" name="medioderecibo" value="direccion_fisica">
-  </div>
-  <div class="fila-9">
-  		<input type="text" id="campodircorreo" autosize class="form-campo" />
-  		<input type="text" id="campodirfisica" autosize class="form-campo" />
-  </div>
-  <div class="fila-10">
-  		<tooltip-content #numerotelc [animation]="true" placement="'top'">  
-	      <b>Señor Usuario este campo es numérico por favor verificar</b>
-	    </tooltip-content> 
-  		<input type="number" min="1" [tooltip]="numerotelc"  id="campoteloficina" autosize class="form-campo" />
-  		<input type="number" min="1" [tooltip]="numerotelc"  id="campotelcasa" autosize class="form-campo" />
-  		<input type="number" min="1" [tooltip]="numerotelc"  id="campotelcel" autosize class="form-campo" />
-  </div>
-  <div class="fila-11">
-   		<input type="text" id="objetorecurso" autosize class="form-campo" />
-  </div>
-  <div class="fila-12">
-  		<textarea  id="hechosrecurso" rows="7" maxlength="1275"></textarea>
-  </div>
-  <div class="fila-13">
-  		<textarea  id="hechosrecurso" rows="2" maxlength="410"></textarea>
-  </div>
-  <div class="fila-14">
-  		<input type="radio" id="campoautorizosi" name="autorizado" value="si">
-    	<input type="radio" id="campoautorizono" name="autorizado" value="no">
-  </div>
-  <div class="fila-15">
-   		<input type="text" id="nombreautor" autosize class="form-campo" />
-   		<tooltip-content #numerocc [animation]="true" placement="'top'">  
-	      <b>Señor Usuario este campo es numérico por favor verificar</b>
-	    </tooltip-content> 
-  		<input type="number" min="1" [tooltip]="numerocc"  id="campoccautor" autosize class="form-campo" />
-  </div>
+<div class="descargar">
+  <button [disabled]="!puedeDescargar" (click)="descargarPdf()" class="btn btn-link">Descargar Duplicado <img src="assets/images/pdf.svg" /></button>
 </div>
-<hr>
-<div class="formulario-diligenciable pqr-recursop2"></div>
+<div class="formulario contendor-app">
+  <div class="formulario-diligenciable pqr-recursop1">
+    <div class="fila-1">
+  		<input type="text" id="campociudad" autosize class="form-campo" />
+  	  	<tooltip-content #numerofecha [animation]="true" placement="'top'">  
+  	      <b>Señor Usuario este campo es numérico por favor verificar</b>
+  	    </tooltip-content> 
+  	    <input type="number" min="1" [tooltip]="numerofecha" min="1" max="31" id="campodia" autosize />
+  	    <input type="number" min="1" [tooltip]="numerofecha" min="1" max="12" id="campomes" autosize />
+  	    <input type="number" min="1" [tooltip]="numerofecha" min="2016" max="2999" id="campoanio" autosize />
+    </div>
+    <div class="fila-2">
+    		<input type="radio" id="camporecsi" name="recursoreposicion" value="si">
+      	<input type="radio" id="camporecno" name="recursoreposicion" value="no">
+    </div>
+    <div class="fila-3">
+    		<tooltip-content #numerotel [animation]="true" placement="'top'">  
+  	      <b>Señor Usuario este campo es numérico por favor verificar</b>
+  	    </tooltip-content> 
+  	    <input type="number" min="1" [tooltip]="numerotel" id="camponumtel" autosize />
+    </div>
+    <div class="fila-4">
+  	    <input type="text" id="camponombrepr" autosize class="form-campo" />
+    </div>
+    <div class="fila-5">
+  	    <input type="text" id="campoapellidopr" autosize class="form-campo" />
+    </div>
+    <div class="fila-6">
+    		<input type="radio" id="campotipocc" name="tipodocumento" value="cc">
+      	<input type="radio" id="campotipoce" name="tipodocumento" value="ce">
+      	<input type="radio" id="campotiponit" name="tipodocumento" value="nt">
+      	<input type="radio" id="campotipopas" name="tipodocumento" value="pa">
+    </div>
+    <div class="fila-7">
+  	    <tooltip-content #numerodoc [animation]="true" placement="'top'">  
+  	      <b>Señor Usuario este campo es numérico por favor verificar</b>
+  	    </tooltip-content> 
+  	    <input type="number" min="1" [tooltip]="numerodoc" id="camponumdoc" autosize />
+    </div>
+    <div class="fila-8">
+    		<input type="radio" id="campotipocorreo" name="medioderecibo" value="correo_electronico">
+      	<input type="radio" id="campotipodireccionf" name="medioderecibo" value="direccion_fisica">
+    </div>
+    <div class="fila-9">
+    		<input type="text" id="campodircorreo" autosize class="form-campo" />
+    		<input type="text" id="campodirfisica" autosize class="form-campo" />
+    </div>
+    <div class="fila-10">
+    		<tooltip-content #numerotelc [animation]="true" placement="'top'">  
+  	      <b>Señor Usuario este campo es numérico por favor verificar</b>
+  	    </tooltip-content> 
+    		<input type="number" min="1" [tooltip]="numerotelc"  id="campoteloficina" autosize class="form-campo" />
+    		<input type="number" min="1" [tooltip]="numerotelc"  id="campotelcasa" autosize class="form-campo" />
+    		<input type="number" min="1" [tooltip]="numerotelc"  id="campotelcel" autosize class="form-campo" />
+    </div>
+    <div class="fila-11">
+     		<input type="text" id="objetorecurso" autosize class="form-campo" />
+    </div>
+    <div class="fila-12">
+    		<textarea  id="hechosrecurso" rows="7" maxlength="1275"></textarea>
+    </div>
+    <div class="fila-13">
+    		<textarea  id="hechosrecurso" rows="2" maxlength="410"></textarea>
+    </div>
+    <div class="fila-14">
+    		<input type="radio" id="campoautorizosi" name="autorizado" value="si">
+      	<input type="radio" id="campoautorizono" name="autorizado" value="no">
+    </div>
+    <div class="fila-15">
+     		<input type="text" id="nombreautor" autosize class="form-campo" />
+     		<tooltip-content #numerocc [animation]="true" placement="'top'">  
+  	      <b>Señor Usuario este campo es numérico por favor verificar</b>
+  	    </tooltip-content> 
+    		<input type="number" min="1" [tooltip]="numerocc"  id="campoccautor" autosize class="form-campo" />
+    </div>
+  </div>
+  <div class="formulario-diligenciable pqr-recursop2 page-break"></div>
+</div>

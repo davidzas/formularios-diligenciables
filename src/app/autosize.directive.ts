@@ -29,6 +29,7 @@ export class AutosizeDirective {
     } else {
       this.element.nativeElement.style.width = this.base + 'px';
     }
+    //this.element.nativeElement.style.border =  '0px';
     //console.log(this.element.nativeElement.scrollWidth);
   }
 }
