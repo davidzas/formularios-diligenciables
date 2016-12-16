@@ -1,4 +1,4 @@
-.formulario{
+.formulariopt{
     .pqr-peticionp1{
         background: url(assets/images/formato-ptp1.png);
         position: relative;
@@ -13,7 +13,7 @@
             #campociudad{
                 position: absolute;
                 height: 21px;
-                max-width: 218px;
+                max-width: 470px;
             }
             #campodia{
                 position: absolute;
@@ -55,7 +55,7 @@
                 position: absolute;
                 left: 363px;
                 height: 21px;
-                max-width: 260px;
+                max-width: 850px;
             }    
         }
         .fila-4{
@@ -67,7 +67,7 @@
                 position: absolute;
                 left: 486px;
                 height: 21px;
-                max-width: 686px;
+                max-width: 728px;
             }    
         }
         .fila-5{
@@ -79,7 +79,7 @@
                 position: absolute;
                 left: 368px;
                 height: 21px;
-                max-width: 808px;
+                max-width: 845px;
             }    
         }
         .fila-6{
@@ -121,7 +121,7 @@
                 position: absolute;
                 left: 362px;
                 height: 21px;
-                max-width: 236px;
+                max-width: 852px;
             }    
         }
         .fila-8{
@@ -193,7 +193,7 @@
             #objetopeticion{
                 position: absolute;
                 height: 21px;
-                max-width: 1178px;
+                max-width: 1208px;
             }     
         }
         .fila-12{
@@ -204,11 +204,10 @@
             #hechospeticion{
                 position: absolute;
                 height: 132px;
-                width: 1202px;
+                width: 1208px;
                 line-height: 35px;
                 resize: none;
                 overflow: hidden;
-                /*background: transparent;*/
             }   
         }
         .fila-13{
@@ -219,7 +218,7 @@
             #pruebaspeticion{
                 position: absolute;
                 height: 21px;
-                max-width: 1178px;
+                max-width: 1208px;
             }   
         }
         .fila-14{
@@ -258,6 +257,10 @@
                 max-width: 405px;
             }  
         }
+        .listo{ 
+            border: 0px; 
+            background: transparent;         
+        } 
     }
     .pqr-peticionp2{
         background: url(assets/images/formato-ptp2.png);
@@ -284,4 +287,13 @@
     width: 100%;
     height: calc(100% - 183px);
     box-shadow: 0 0 10px #000;
+}
+
+@font-face {
+    font-family: helveticasp;
+    src: url('assets/fonts/helveticasp.ttf');
+}
+
+*{
+    font-family: helveticasp;
 }

@@ -1,4 +1,4 @@
-.formulario{
+.formulariopq{
     .pqr-quejap1{
         background: url(assets/images/formato-pqp1.png);
         position: relative;
@@ -13,7 +13,7 @@
             #campociudad{
                 position: absolute;
                 height: 21px;
-                max-width: 221px;
+                max-width: 470px;
             }
             #campodia{
                 position: absolute;
@@ -55,7 +55,7 @@
                 position: absolute;
                 left: 343px;
                 height: 21px;
-                max-width: 260px;
+                max-width: 852px;
             }    
         }
         .fila-4{
@@ -67,7 +67,7 @@
                 position: absolute;
                 left: 488px;
                 height: 21px;
-                max-width: 686px;
+                max-width: 705px;
             }    
         }
         .fila-5{
@@ -79,7 +79,7 @@
                 position: absolute;
                 left: 370px;
                 height: 21px;
-                max-width: 808px;
+                max-width: 823px;
             }    
         }
         .fila-6{
@@ -121,7 +121,7 @@
                 position: absolute;
                 left: 364px;
                 height: 21px;
-                max-width: 236px;
+                max-width: 846px;
             }    
         }
         .fila-8{
@@ -193,7 +193,7 @@
             #objetoqueja{
                 position: absolute;
                 height: 21px;
-                max-width: 1193px;
+                max-width: 1204px;
             }     
         }
         .fila-12{
@@ -208,7 +208,6 @@
                 line-height: 35px;
                 resize: none;
                 overflow: hidden;
-                /*background: transparent;*/
             }   
         }
         .fila-13{
@@ -219,7 +218,7 @@
             #pruebasqueja{
                 position: absolute;
                 height: 21px;
-                max-width: 1203px;
+                max-width: 1204px;
             }   
         }
         .fila-14{
@@ -242,7 +241,7 @@
         }
         .fila-15{
             position: absolute;
-            top: 1875px;
+            top: 1868px;
             height: 24px;
             width: 1238px;
             #nombreautor{
@@ -258,6 +257,9 @@
                 max-width: 405px;
             }  
         }
+        .listo{ border: 0px; 
+                background: transparent; 
+            }
     }
     .pqr-quejap2{
         background: url(assets/images/formato-pqp2.png);
@@ -283,4 +285,13 @@
     width: 100%;
     height: calc(100% - 183px);
     box-shadow: 0 0 10px #000;
+}
+
+@font-face {
+    font-family: helveticasp;
+    src: url('assets/fonts/helveticasp.ttf');
+}
+
+*{
+    font-family: helveticasp;
 }

@@ -1,11 +1,9 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 declare let jQuery: any;
 declare let kendo: any;
+  
 kendo.pdf.defineFont({
-  "newsghotic": "assets/fonts/fuente.ttf",
-  "newsghotic|Bold": "assets/fonts/fuente_bold.ttf",
-  "newsghotic_bold": "assets/fonts/fuente_bold.ttf"
-
+  "helveticasp": "assets/fonts/helveticasp.ttf"
 });
 
 
@@ -24,12 +22,7 @@ export class ModificacionServiciosComponent implements OnInit {
     this.puedeDescargar = true;
   }
 
-  ngOnInit() {
-
-
-  }
-
-
+  ngOnInit() {  }
 
   descargarPdf() {
     this.enlistpdf = true;
@@ -56,10 +49,9 @@ export class ModificacionServiciosComponent implements OnInit {
     });
     setTimeout(_ => {
       kendo.drawing.drawDOM(jQuery(".formulario-diligenciable.modificacion-servicios"), {
-        forcePageBreak: ".page-break", paperSize: "Legal",
-        scale: 0.48
+        forcePageBreak: ".page-break", paperSize: "Legal", scale: 0.48
       }).then((group) => {
-        kendo.drawing.pdf.saveAs(group, "formato.pdf");
+        kendo.drawing.pdf.saveAs(group, "formato_modificacion_servicios.pdf");
 
         this.puedeDescargar = true;
         this.enlistpdf = false;
@@ -70,6 +62,9 @@ export class ModificacionServiciosComponent implements OnInit {
         radios.forEach(el => {
           let id = jQuery(el).prop('id');
           jQuery('#' + id).replaceWith(el);
+        });
+        jQuery('input[type=radio],input[type=checkbox]').each(function () {
+            jQuery(this).show();
         });
       });
     }, 1000);
