@@ -24,6 +24,8 @@ export class ModificacionServiciosComponent implements OnInit {
 
   ngOnInit() {  }
 
+  //Funcion que permite descargar el formulario en formato PDF, utilizando la libreria kendo
+  //@return: formato.pdf
   descargarPdf() {
     this.enlistpdf = true;
     this.puedeDescargar = false;
@@ -68,21 +70,6 @@ export class ModificacionServiciosComponent implements OnInit {
         });
       });
     }, 1000);
-    //*********************************************************//
-    /*this.puedeDescargar = false;
-    this.enlistpdf = true;
-    console.log(this.enlistpdf);
-
-    kendo.drawing.drawDOM(jQuery(".formularioms"), {
-      paperSize: "Legal",
-      //margin: "0cm",
-      scale: 0.48
-    }).then(function(group){
-      kendo.drawing.pdf.saveAs(group, "formulario_modificacion_servicios.pdf");
-      this.enlistpdf = false;
-      console.log(this.enlistpdf);
-      this.puedeDescargar = true;
-    });*/
 
   }
 

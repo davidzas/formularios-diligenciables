@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CustomFormsModule } from 'ng2-validation'
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -12,6 +13,7 @@ import { AutosizeDirective } from './autosize.directive';
 import { PqrRecursoComponent } from './pqr-recurso/pqr-recurso.component';
 import { PqrQuejaComponent } from './pqr-queja/pqr-queja.component';
 import { PqrPeticionComponent } from './pqr-peticion/pqr-peticion.component';
+import { LimitextareaDirective } from './limitextarea.directive';
 
 
 const appRoutes: Routes = [
@@ -31,11 +33,13 @@ const appRoutes: Routes = [
     AutosizeDirective,
     PqrRecursoComponent,
     PqrQuejaComponent,
-    PqrPeticionComponent
+    PqrPeticionComponent,
+    LimitextareaDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    CustomFormsModule,
     HttpModule,
     TooltipModule,
     RouterModule.forRoot(appRoutes)

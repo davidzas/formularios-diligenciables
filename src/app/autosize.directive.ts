@@ -16,20 +16,18 @@ export class AutosizeDirective {
   ngAfterContentChecked(): void {
     this.adjust();
   }
+
+  //Funcion que autoajusta los input text agregando pixeles acorde con su max-width
+  //@return: void
   adjust(): void {
-    if (!this.base) {
-      this.base = parseInt(this.element.nativeElement.offsetWidth); 
-       
-       
-    }
-    this.element.nativeElement.style.overflow = 'hidden';
-    //this.element.nativeElement.style.height = 'auto';
-    if (this.element.nativeElement.scrollWidth > this.base) {
-      this.element.nativeElement.style.width = this.element.nativeElement.scrollWidth + "px";
-    } else {
-      this.element.nativeElement.style.width = this.base + 'px';
-    }
-    //this.element.nativeElement.style.border =  '0px';
-    //console.log(this.element.nativeElement.scrollWidth);
+      if (!this.base) {
+        this.base = parseInt(this.element.nativeElement.offsetWidth); 
+      }
+      this.element.nativeElement.style.overflow = 'hidden';
+      if (this.element.nativeElement.scrollWidth > this.base) {
+        this.element.nativeElement.style.width = this.element.nativeElement.scrollWidth + "px";
+      } else {
+        this.element.nativeElement.style.width = this.base + 'px';
+      }
   }
 }

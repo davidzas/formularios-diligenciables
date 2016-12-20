@@ -21,19 +21,10 @@ export class PqrRecursoComponent implements OnInit {
     this.puedeDescargar = true;
   }
 
-  ngOnInit() {
-      //Limitando Text Area
-      jQuery('textarea').keydown(function(e){
-          console.log(jQuery(this).val().length);
-          if((e.keyCode == 13 && jQuery(this).val().split("\n").length >= jQuery(this).attr('rows'))||
-            (jQuery(this).val().length > (jQuery(this).attr('rows') * 197) )) { 
-              return false;
-          }e lse if(parseInt(jQuery(this).val().length)>jQuery(this).attr('maxlength')){
-              jQuery(this).val(jQuery(this).val().substring(0,jQuery(this).attr('maxlength')-1));
-          }
-      });
-  }
+  ngOnInit() {  }
 
+  //Funcion que permite descargar el formulario en formato PDF, utilizando la libreria kendo
+  //@return: formato.pdf
   descargarPdf() {
     this.enlistpdf = true;
     this.puedeDescargar = false;

@@ -1,5 +1,5 @@
 <div class="descargar">
-  <button [disabled]="!puedeDescargar" (click)="descargarPdf()" class="btn btn-link">Descargar Duplicado <img src="assets/images/pdf.svg" /></button>
+  <button [disabled]="!puedeDescargar" (click)="descargarPdf()" class="btn btn-link">Descargar Formato Modificacion Servicios <img src="assets/images/pdf.svg" /></button>
 </div>
 <div class="contendor-app"> 
   <div class="formularioms">
@@ -8,7 +8,7 @@
         <tooltip-content #nrosolicitud [animation]="true" placement="'top'">  
           <b>Señor usuario el número de la solicitud lo puede encontrar en la parte  superior de la factura</b>
         </tooltip-content> 
-        <input type="number" min="1" [tooltip]="nrosolicitud" id="camponrosolicitud" autosize [class.listo]="enlistpdf"   />
+        <input type="number" min="1" maxlength="40" [tooltip]="nrosolicitud" id="camponrosolicitud" autosize [class.listo]="enlistpdf"   />
       </div>
 
       <div class="subfila-1">
@@ -21,20 +21,20 @@
       </div>
 
       <div class="fila-2">
-        <input type="text" id="campooficina" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" id="campooficina" maxlength="53" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #numero [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content> 
-        <input type="number" min="1" [tooltip]="numero" id="campolinea" autosize [class.listo]="enlistpdf"  />
-        <input type="number" min="1" [tooltip]="numero" id="campolineamovil" autosize [class.listo]="enlistpdf"  />
+        <input type="number" min="1" maxlength="15" [tooltip]="numero" id="campolinea" autosize [class.listo]="enlistpdf"  />
+        <input type="number" min="1" maxlength="15" [tooltip]="numero" id="campolineamovil" autosize [class.listo]="enlistpdf"  />
       </div>
 
       <div class="fila-3">
-        <input type="text" id="camporazonsocial" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" id="camporazonsocial" maxlength="95" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #numeroced [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content> 
-        <input type="number" min="1" [tooltip]="numeroced" id="campocedula" autosize [class.listo]="enlistpdf"  />
+        <input type="number" min="1" maxlength="25" [tooltip]="numeroced" id="campocedula" autosize [class.listo]="enlistpdf"  />
       </div> 
 
       <div class="fila-4">
@@ -48,15 +48,15 @@
       </div>
 
       <div class="fila-5b">
-        <input type="text" id="campopersonal" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="99" id="campopersonal" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <input type="radio" id="campoentregadosi" name="entregado" value="si">
         <input type="radio" id="campoentregadono" name="entregado" value="no">
 
-        <input type="text" id="campodireccion" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="campobarrio" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="88" id="campodireccion" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="41" id="campobarrio" autosize [class.listo]="enlistpdf"  class="form-campo" />
 
-        <input type="text" id="campoemail" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="campomunicipio" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="93" id="campoemail" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="37" id="campomunicipio" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-6">
@@ -72,13 +72,13 @@
       </div>
 
       <div class="fila-7">
-        <input type="text" id="planactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="43" id="planactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #preciopactol [animation]="true" placement="'top'">  
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
         <input type="text" id="preciopact" [tooltip]="preciopactol" readonly [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="estratoactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="nuevoestrato" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="21" id="estratoactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="22" id="nuevoestrato" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div> 
 
       <div class="fila-8">
@@ -89,12 +89,12 @@
       </div> 
 
       <div class="fila-9">
-        <input type="text" id="nuevoplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="71" id="nuevoplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #precionuevoplan [animation]="true" placement="'top'">  
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
         <input type="text" id="precionuevop" [tooltip]="precionuevoplan" readonly [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="vigencianuevoplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="46" id="vigencianuevoplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div> 
 
       <div class="fila-10">
@@ -105,9 +105,9 @@
       </div>
 
       <div class="fila-11">
-        <input type="text" id="minincluidos" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="velocidad" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="plantv" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="16" id="minincluidos" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="38" id="velocidad" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="50" id="plantv" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-12a">
@@ -123,7 +123,7 @@
       </div>
 
       <div class="fila-12c">
-        <input type="text" id="paquetepremium" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="45" id="paquetepremium" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #preciopaq [animation]="true" placement="'top'">  
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
@@ -135,21 +135,21 @@
         <tooltip-content #numerodeco [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
-        <input type="number" min="1" id="numdecoadicionales" [tooltip]="numerodeco" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="4" id="numdecoadicionales" [tooltip]="numerodeco" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #precioind [animation]="true" placement="'top'">  
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
         <input type="text" id="precioindividual" [tooltip]="precioind" readonly [class.listo]="enlistpdf"  class="form-campo" />
         <input type="text" id="preciototaldeco" [tooltip]="precioind" readonly [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="observacionescplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="139" id="observacionescplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-14">
         <tooltip-content #numerosolicitudcn [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
-        <input type="number" min="1" id="numactual" [tooltip]="numerosolicitudcn" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="number" min="1" id="numnuevo" [tooltip]="numerosolicitudcn" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="30" id="numactual" [tooltip]="numerosolicitudcn" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="30" id="numnuevo" [tooltip]="numerosolicitudcn" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #preciocambionum [animation]="true" placement="'top'">  
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
@@ -157,28 +157,28 @@
       </div>
 
       <div class="fila-15">
-        <input type="text" id="nuevadireccioncnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="barriondcnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="48" id="nuevadireccioncnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="55" id="barriondcnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-16">
-        <input type="text" id="nuevadireccioncnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="barriondcnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="53" id="nuevadireccioncnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="55" id="barriondcnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-17">
         <tooltip-content #telefonoscontacto [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
-        <input type="number" min="1" id="telcelular" [tooltip]="telefonoscontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="number" min="1" id="teloficina" [tooltip]="telefonoscontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="number" min="1" id="numnuevoestrato" [tooltip]="telefonoscontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="20" id="telcelular" [tooltip]="telefonoscontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="20" id="teloficina" [tooltip]="telefonoscontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="4" id="numnuevoestrato" [tooltip]="telefonoscontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-18">
         <input type="radio" id="enviofisico" name="modoenvio" value="fisico">
         <input type="radio" id="envioelectronico" name="modoenvio" value="electronico">
-        <input type="text" id="actemail" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="89" id="actemail" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-19">
@@ -187,20 +187,20 @@
       </div>
 
       <div class="fila-20">
-        <input type="text" id="direccionactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="barrioactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="58" id="direccionactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="76" id="barrioactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-21">
-        <input type="text" id="direccionnueva" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="barrionuevo" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="58" id="direccionnueva" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="76" id="barrionuevo" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-22">
         <tooltip-content #telefonosdecontacto [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
-        <input type="number" min="1" id="telscontacto" [tooltip]="telefonosdecontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="40" id="telscontacto" [tooltip]="telefonosdecontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <input type="radio" id="est1" name="nuevoestrato"  value="1">
         <input type="radio" id="est2" name="nuevoestrato"  value="2">
         <input type="radio" id="est3" name="nuevoestrato"  value="3">
@@ -214,7 +214,7 @@
         <tooltip-content #nuevonumtol [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
-        <input type="number" min="1" id="nuevonumero" [tooltip]="nuevonumtol" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="20" id="nuevonumero" [tooltip]="nuevonumtol" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #preciost [animation]="true" placement="'top'">  
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
@@ -232,8 +232,8 @@
       </div>
 
       <div class="fila-25">
-        <input type="text" id="fechainiciosusp" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="fechafinsusp" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="19" id="fechainiciosusp" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="29" id="fechafinsusp" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #precioreconexiontol [animation]="true" placement="'top'">  
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
@@ -243,16 +243,17 @@
       <div class="fila-26">
         <input type="radio" id="tramprorroga" name="tramitesuspendido"  value="prorroga">
         <input type="radio" id="tramlevantarsusp" name="tramitesuspendido"  value="levantar_suspension">
-         <input type="text" id="lapsoprorroga" autosize [class.listo]="enlistpdf"  class="form-campo" />
+         <input type="text" maxlength="10" id="lapsoprorroga" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-27">
-         <input type="text" id="responsablepago" autosize [class.listo]="enlistpdf"  class="form-campo" />
+         <input type="text" maxlength="74" id="responsablepago" autosize [class.listo]="enlistpdf"  class="form-campo" />
          <tooltip-content #identificatol [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
-        <input type="number" min="1" id="cedulanumero" [tooltip]="identificatol" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="number" min="1" id="resplineanumero" [tooltip]="identificatol" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="30" id="cedulanumero" [tooltip]="identificatol" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="40" id="resplineanumero" [tooltip]="identificatol" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        
       </div>
 
       <div class="fila-28">
@@ -264,12 +265,12 @@
       </div>
 
       <div class="fila-29">
-        <input type="text" id="barriosuscriptor" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="nombrenuevosus" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="13" id="barriosuscriptor" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="37" id="nombrenuevosus" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #identificacionns [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
-        <input type="number" min="1" id="cedulanumerons" [tooltip]="identificacionns" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="20" id="cedulanumerons" [tooltip]="identificacionns" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #preciocambiosustol [animation]="true" placement="'top'">  
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
@@ -277,24 +278,24 @@
       </div>
 
       <div class="fila-30">
-        <input type="text" id="titularpredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="74" id="titularpredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #identificacionctp [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
-        <input type="number" min="1" id="cedulanumerotp" [tooltip]="identificacionctp" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="40" id="cedulanumerotp" [tooltip]="identificacionctp" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-31">
-        <input type="text" id="predionumero" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" id="ubicacionpredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="43" id="predionumero" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="63" id="ubicacionpredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-32">
-        <input type="text" id="barriopredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="67" id="barriopredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #lineanumtol [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
-        <input type="number" min="1" id="titularidadlineanumero" [tooltip]="lineanumtol" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" maxlength="25" id="titularidadlineanumero" [tooltip]="lineanumtol" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-33">
@@ -302,6 +303,7 @@
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
         <input type="text" id="preciocestitularpredio" [tooltip]="preciocesiontol" readonly [class.listo]="enlistpdf"  class="form-campo" />
+        <textarea limit style="display:none;"></textarea>
       </div>
 
     </div>
