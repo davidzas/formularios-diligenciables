@@ -10,6 +10,7 @@ export class MainComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	 window.location.href='https://www.telebucaramanga.com.co/';
   }
 
 }
