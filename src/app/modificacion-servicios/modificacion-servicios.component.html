@@ -21,7 +21,7 @@
       </div>
 
       <div class="fila-2">
-        <input type="text" id="campooficina" maxlength="53" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" id="campooficina" maxlength="48" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #numero [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content> 
@@ -30,7 +30,7 @@
       </div>
 
       <div class="fila-3">
-        <input type="text" id="camporazonsocial" maxlength="95" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" id="camporazonsocial" maxlength="90" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #numeroced [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content> 
@@ -48,15 +48,15 @@
       </div>
 
       <div class="fila-5b">
-        <input type="text" maxlength="99" id="campopersonal" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="94" id="campopersonal" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <input type="radio" id="campoentregadosi" name="entregado" value="si">
         <input type="radio" id="campoentregadono" name="entregado" value="no">
 
-        <input type="text" maxlength="88" id="campodireccion" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="41" id="campobarrio" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="83" id="campodireccion" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="36" id="campobarrio" autosize [class.listo]="enlistpdf"  class="form-campo" />
 
-        <input type="text" maxlength="93" id="campoemail" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="37" id="campomunicipio" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="88" id="campoemail" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="32" id="campomunicipio" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-6">
@@ -72,7 +72,7 @@
       </div>
 
       <div class="fila-7">
-        <input type="text" maxlength="43" id="planactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="38" id="planactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #preciopactol [animation]="true" placement="'top'">  
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
@@ -89,12 +89,12 @@
       </div> 
 
       <div class="fila-9">
-        <input type="text" maxlength="71" id="nuevoplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="66" id="nuevoplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #precionuevoplan [animation]="true" placement="'top'">  
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
         <input type="text" id="precionuevop" [tooltip]="precionuevoplan" readonly [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="46" id="vigencianuevoplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="41" id="vigencianuevoplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div> 
 
       <div class="fila-10">
@@ -106,8 +106,8 @@
 
       <div class="fila-11">
         <input type="text" maxlength="16" id="minincluidos" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="38" id="velocidad" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="50" id="plantv" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="33" id="velocidad" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="45" id="plantv" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-12a">
@@ -123,7 +123,7 @@
       </div>
 
       <div class="fila-12c">
-        <input type="text" maxlength="45" id="paquetepremium" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="40" id="paquetepremium" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #preciopaq [animation]="true" placement="'top'">  
           <b>Señor usuario, el  precio o costo será definido de acuerdo a los servicios solicitados o trámite realizado, este espacio no requiere ser diligenciado</b>
         </tooltip-content> 
@@ -141,7 +141,7 @@
         </tooltip-content> 
         <input type="text" id="precioindividual" [tooltip]="precioind" readonly [class.listo]="enlistpdf"  class="form-campo" />
         <input type="text" id="preciototaldeco" [tooltip]="precioind" readonly [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="139" id="observacionescplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="134" id="observacionescplan" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-14">
@@ -157,13 +157,13 @@
       </div>
 
       <div class="fila-15">
-        <input type="text" maxlength="48" id="nuevadireccioncnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="55" id="barriondcnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="43" id="nuevadireccioncnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="50" id="barriondcnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-16">
-        <input type="text" maxlength="53" id="nuevadireccioncnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="55" id="barriondcnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="48" id="nuevadireccioncnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="50" id="barriondcnom" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-17">
@@ -178,7 +178,7 @@
       <div class="fila-18">
         <input type="radio" id="enviofisico" name="modoenvio" value="fisico">
         <input type="radio" id="envioelectronico" name="modoenvio" value="electronico">
-        <input type="text" maxlength="89" id="actemail" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="84" id="actemail" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-19">
@@ -187,13 +187,13 @@
       </div>
 
       <div class="fila-20">
-        <input type="text" maxlength="58" id="direccionactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="76" id="barrioactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="53" id="direccionactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="71" id="barrioactual" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-21">
-        <input type="text" maxlength="58" id="direccionnueva" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="76" id="barrionuevo" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="53" id="direccionnueva" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="71" id="barrionuevo" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-22">
@@ -247,7 +247,7 @@
       </div>
 
       <div class="fila-27">
-         <input type="text" maxlength="74" id="responsablepago" autosize [class.listo]="enlistpdf"  class="form-campo" />
+         <input type="text" maxlength="69" id="responsablepago" autosize [class.listo]="enlistpdf"  class="form-campo" />
          <tooltip-content #identificatol [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
@@ -261,12 +261,12 @@
         <input type="radio" id="cederinternet" name="cederderechos"  value="internet">
         <input type="radio" id="cedertv" name="cederderechos"  value="television">
         <input type="radio" id="cederlineamovil" name="cederderechos"  value="linea_movil">
-        <input type="text" id="cederubicacion" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="30" id="cederubicacion" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-29">
         <input type="text" maxlength="13" id="barriosuscriptor" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="37" id="nombrenuevosus" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="32" id="nombrenuevosus" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #identificacionns [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
@@ -278,7 +278,7 @@
       </div>
 
       <div class="fila-30">
-        <input type="text" maxlength="74" id="titularpredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="69" id="titularpredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #identificacionctp [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
@@ -286,12 +286,12 @@
       </div>
 
       <div class="fila-31">
-        <input type="text" maxlength="43" id="predionumero" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="text" maxlength="63" id="ubicacionpredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="38" id="predionumero" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="58" id="ubicacionpredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-32">
-        <input type="text" maxlength="67" id="barriopredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="text" maxlength="62" id="barriopredio" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #lineanumtol [animation]="true" placement="'top'">  
           <b>Señor Usuario este campo es numérico por favor verificar</b>
         </tooltip-content>
