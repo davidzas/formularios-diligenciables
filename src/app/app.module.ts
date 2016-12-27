@@ -14,6 +14,7 @@ import { PqrRecursoComponent } from './pqr-recurso/pqr-recurso.component';
 import { PqrQuejaComponent } from './pqr-queja/pqr-queja.component';
 import { PqrPeticionComponent } from './pqr-peticion/pqr-peticion.component';
 import { LimitextareaDirective } from './limitextarea.directive';
+import { EmailValidatorDirective } from './email-validator.directive';
 
 
 const appRoutes: Routes = [
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     PqrRecursoComponent,
     PqrQuejaComponent,
     PqrPeticionComponent,
-    LimitextareaDirective
+    LimitextareaDirective,
+    EmailValidatorDirective
   ],
   imports: [
     BrowserModule,

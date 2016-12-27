@@ -1,11 +1,11 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+
 declare let jQuery: any;
 declare let kendo: any;
   
 kendo.pdf.defineFont({
   "helveticasp": "assets/fonts/helveticasp.ttf"
 });
-
 
 @Component({
   selector: 'app-modificacion-servicios',
@@ -17,6 +17,7 @@ export class ModificacionServiciosComponent implements OnInit {
 
   enlistpdf: any;
   puedeDescargar: any;
+
   constructor() {
     this.enlistpdf = false;
     this.puedeDescargar = true;

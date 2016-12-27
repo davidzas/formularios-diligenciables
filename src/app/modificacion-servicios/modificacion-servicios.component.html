@@ -11,15 +11,6 @@
         <input type="number" min="1" maxlength="40" [tooltip]="nrosolicitud" id="camponrosolicitud" autosize [class.listo]="enlistpdf"   />
       </div>
 
-      <div class="subfila-1">
-        <tooltip-content #numerofecha [animation]="true" placement="'top'">  
-          <b>Señor Usuario este campo es numérico por favor verificar</b>
-        </tooltip-content> 
-        <input type="number" min="1" [tooltip]="numerofecha" min="1" max="31" id="campodia" autosize [class.listo]="enlistpdf"  />
-        <input type="number" min="1" [tooltip]="numerofecha" min="1" max="12" id="campomes" autosize [class.listo]="enlistpdf"  />
-        <input type="number" min="1" [tooltip]="numerofecha" min="2016" max="2999" id="campoanio" autosize [class.listo]="enlistpdf"  />
-      </div>
-
       <div class="fila-2">
         <input type="text" id="campooficina" maxlength="48" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <tooltip-content #numero [animation]="true" placement="'top'">  
@@ -55,7 +46,11 @@
         <input type="text" maxlength="83" id="campodireccion" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <input type="text" maxlength="36" id="campobarrio" autosize [class.listo]="enlistpdf"  class="form-campo" />
 
-        <input type="text" maxlength="88" id="campoemail" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <tooltip-content #emailvalidoin [animation]="true" placement="'top'">  
+          <b>Señor Usuario por favor verificar que el correo electronico ingresado sea valido</b>
+        </tooltip-content>
+        <input type="text" maxlength="88" id="campoemail" [tooltip]="emailvalidoin" autosize [class.listo]="enlistpdf" class="form-campo" validateEmail />
+
         <input type="text" maxlength="32" id="campomunicipio" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
@@ -172,13 +167,16 @@
         </tooltip-content>
         <input type="number" min="1" maxlength="20" id="telcelular" [tooltip]="telefonoscontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
         <input type="number" min="1" maxlength="20" id="teloficina" [tooltip]="telefonoscontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
-        <input type="number" min="1" maxlength="4" id="numnuevoestrato" [tooltip]="telefonoscontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <input type="number" min="1" max="6" maxlength="0" id="numnuevoestrato" [tooltip]="telefonoscontacto" autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-18">
         <input type="radio" id="enviofisico" name="modoenvio" value="fisico">
         <input type="radio" id="envioelectronico" name="modoenvio" value="electronico">
-        <input type="text" maxlength="84" id="actemail" autosize [class.listo]="enlistpdf"  class="form-campo" />
+        <tooltip-content #emailvalido [animation]="true" placement="'top'">  
+          <b>Señor Usuario por favor verificar que el correo electronico ingresado sea valido</b>
+        </tooltip-content>
+        <input type="text" maxlength="84" id="actemail" [tooltip]="emailvalido" validateEmail autosize [class.listo]="enlistpdf"  class="form-campo" />
       </div>
 
       <div class="fila-19">
